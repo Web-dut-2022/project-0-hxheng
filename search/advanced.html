@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+    </head>
+    <body>
+        <style type="text/css">
+            body {
+                margin-left: 15%;
+                margin-right: 15%;
+                font-size: small;
+              }    
+            .searchform{
+                padding-top: 30px;
+                text-align: center;
+                margin:0 auto;
+            }
+            .inputBox{
+                width: 300px;
+                height: 20px;
+                margin: 0px;
+                margin-left: -30px;
+                text-align: left;
+            }
+            .buttBox{
+                height: 30px;
+                font-size: large;
+                margin: 10px;
+                background-color: aqua;
+            }
+            .link{
+                position: absolute;
+                right: 50px;
+                top:10px;
+            }
+        </style>
+        <div class="searchform">
+            <img src="result@2.png" width="300px">
+            <form
+                action="https://www.baidu.com/s"
+                name="f1"
+                target="_blank"
+                coejsnpoi238c5l6lq0f=""
+            >
+        <table width="90%" border="0" cellpadding="2" cellspacing="0" id="t1">
+          <tbody>          
+            <tr>
+                <td width="150" rowspan="4" valign="top">
+                    <div ><b>搜索结果</b></div>
+                </td>
+              <td width="180" >包含以下<b>全部</b>的关键词</td>
+              <td>
+                <input id="keyword" size="35" name="q1" maxlength="100" class="inputBox"/>
+              </td>
+            </tr>
+            <tr>
+              <td>包含以下的<b>完整关键词</b></td>
+              <td>
+                <input size="35" name="q2" maxlength="100" class="inputBox"/>
+              </td>
+            </tr>
+            <tr>
+              <td>包含以下<b>任意一个</b>关键词</td>
+              <td>
+                <input size="35" name="q3" maxlength="100" class="inputBox"/>
+              </td>
+            </tr>
+            <tr>
+              <td><b>不包括</b>以下关键词</td>
+              <td>
+                <input size="35" name="q4" maxlength="100" class="inputBox"/>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table
+          width="90%"
+          cellpadding="2"
+          cellspacing="0"
+          border="0"
+          style="margin: 5px 0 0 10px; table-layout: fixed"
+        >
+          <tbody>
+            <tr>
+              <td width="140"><b>搜索结果显示条数</b></td>
+              
+              <td>
+                <font size="-1">
+                  <select name="rn" class="custom-select custom-select-sm mb-3" style="width: 60%;margin-left: 20%;">
+                    <option value="10" selected="selected">每页显示10条</option>
+                    <option value="20">每页显示20条</option>
+                    <option value="50">每页显示50条</option>
+                  </select>
+                </font>
+              </td>
+            </tr>
+            <tr>
+              <td><b>时间</b></td>
+              
+              <td>
+                <font size="-1">
+                  <select name="lm" class="custom-select custom-select-sm mb-3" style="width: 60%;margin-left: 20%;">
+                    <option value="0" selected="selected">全部时间</option>
+                    <option value="1">最近一天</option>
+                    <option value="7">最近一周</option>
+                    <option value="30">最近一月</option>
+                    <option value="360">最近一年</option>
+                  </select>
+                </font>
+              </td>
+            </tr>
+            <tr>
+              <td><b>语言</b></td>
+              
+              <td >
+                <div style="margin-left: 20%;">
+                <input
+                  name="ct"
+                  id="ct_0"
+                  value="0"
+                  checked="checked"
+                  type="radio"
+                />
+                <label for="ct_0">全部语言&#8195&#8195&#8195&nbsp</label>
+                </div>
+                <div style="margin-left: 20%;">
+                  <input name="ct" id="ct_1" value="1" type="radio" />
+                  <label for="ct_1">仅在简体中文中&nbsp</label>
+                </div>
+                <div style="margin-left: 20%;">
+                  <input name="ct" id="ct_2" value="2" type="radio" />
+                  <label for="ct_2">仅在繁体中文中&#8195</label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><b>文档格式</b></td>
+              
+              <td>
+                <select
+                  name="ft"
+                  size="1"
+                  class="custom-select custom-select-sm mb-3"
+                  style="width: 60%;margin-left: 20%;"
+                >
+                  <option value="">所有网页和文件</option>
+                  <option value="pdf">Adobe Acrobat PDF (.pdf)</option>
+                  <option value="doc">微软 Word (.doc)</option>
+                  <option value="xls">微软 Excel (.xls)</option>
+                  <option value="ppt">微软 Powerpoint (.ppt)</option>
+                  <option value="rtf">RTF 文件 (.rtf)</option>
+                  <option value="all">所有格式</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><b>关键词位置</b></td>
+              
+              <td>
+                <div style="margin-left: 20%;">
+                <input
+                  name="q5"
+                  id="q5_0"
+                  value=""
+                  checked="checked"
+                  type="radio"
+                />
+                <label for="q5_0">网页的任何地方&nbsp&nbsp&nbsp</label>
+                </div>
+                <div style="margin-left: 20%;">
+                  <input name="q5" id="q5_1" value="1" type="radio" />
+                  <label for="q5_1">仅网页的标题中&nbsp&nbsp&nbsp</label>
+                </div>
+                <div style="margin-left: 20%;">
+                  <input name="q5" id="q5_2" value="2" type="radio" />
+                  <label for="q5_2">仅在网页的URL中</label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><b>站内搜索</b></td>
+              <td >                
+                  <div style="margin-left: 20%;">
+                    <input size="35" name="q6" maxlength="100" class="inputBox"/>     
+                  </div>        
+              </td>
+            </tr>
+          </tbody>
+          
+        </table>
+            <input
+                  value="高级搜索"
+                  type="submit"
+                  class="buttBox"
+            />
+      </form>
+        </div>
+        <div class="link">
+            <a href="./image.html">图片搜索</a>
+            <a href="./index.html">百度搜索</a>
+        </div>
+    </body>
+</html>
