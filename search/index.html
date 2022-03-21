@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+    </head>
+    <body>
+        <style type="text/css">
+            .searchform{
+                padding-top: 100px;
+                text-align: center;
+                margin:0 auto
+            }
+            .inputBox{
+                width: 500px;
+                height: 30px;
+                margin: 10px;
+                margin-left: 10px;
+            }
+            .buttBox{
+                height: 30px;
+                margin-top: 10px;
+                font-size: large;
+                background-color: aqua;
+            }
+            .link{
+                position: absolute;
+                right: 50px;
+                top:10px;
+            }
+        </style>
+        <div class="searchform">
+            <img src="result@2.png">
+            <form action="https://www.baidu.com/s?wd=%s">
+                <!-- <input type="text" name="q"> -->
+                <input type="text" name="wd" class="inputBox">
+                <!-- <input type="submit" value="Google Search"> -->
+                <input type="submit" value="百度搜索" class="buttBox">
+            </form>
+        </div>
+        <div class="link">
+            <a href="./image.html">图片搜索</a>
+            <a href="./advanced.html">高级搜索</a>
+        </div>
+    </body>
+</html>
